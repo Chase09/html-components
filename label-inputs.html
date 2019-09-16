@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form method="get">
+        <label for="email" >Email:</label>
+        <input type="text" name="email" placeholder="Please enter your email address" size="40" maxlength="90" id="email"/>
+        <!-- This makes a box for you to enter in your email address -->
+        <label for="postal code">Postal Code:</label>
+        <input type="text" name="postal code" placeholder="Please enter your postal code" size="40" maxlength="10" id="postal code"/>
+        <!-- This makes a box for you to enter in your postal code -->
+        <label for="City">City:</label>
+        <input type="text" name="City" placeholder="Please enter your city you live in" size="40" maxlength="100" id="City" />
+        <!-- This makes a box for you to enter in your city that you live in. -->
+        <p>Choose a shipping method</p>
+        <select name="shipping" id="shipping">
+            <option value="Standard Shipping">Standard Shipping</option>
+            <option value="One-Day Shipping">One-Day Shipping</option>
+            <option value="Two-Day Shipping">Two-Day Shipping</option>
+        </select>
+        <!-- This makes a drop down list that includes the options of standard shipping, one-day shipping, and two-day shipping. -->
+        <p>Select a payment method</p>
+        <label><input type="radio" name="payment" value="paypal" checked/><b>Paypal</b></label>
+        <!-- This makes a radio button that when you click it, it selects paypal -->
+        <label><input type="radio" name="payment" value="debit card"/><b>Debit Card</b></label>
+        <!-- This makes a radio button that when you click it, it selects debit card -->
+        <label><input type="radio" name="payment" value="cradit card"/><b>Credit Card</b></label>
+        <!-- This makes a radio button that when you click it, it selects credit card -->
+        <br />
+        <br />
+        <p><label for="comments"><u>Comments</u></label></p>
+        <textarea rows="4" cols="40" name="comments" id="comments">
+        </textarea>
+        <!-- This creates a box for a person on the website to write there comments in -->
+        <br />
+        <br />
+        <label><input type="checkbox" name="email" checked/>Sign me up for email updates</label>
+        <!-- This creates a check box that says sign me up for email updates -->
+        <label><input type="checkbox" name="payment" checked/>Save my payment information</label>
+        <!-- This creates a check box that says save my payment information -->
+        <br />
+        <br />
+        <br />
+        <button>Submit</button>
+        <!-- This creates a button that says submit on it -->
+    </form>
+    <br />
+    
+</body>
+</html>
